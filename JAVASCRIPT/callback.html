@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- paasing a function as a argument to anoter function -->
+   
+   <script>
+
+
+        function fun1(met){
+            setTimeout(()=>{
+               console.log("out put first")
+        },2000)
+        met()
+        }
+        function fun2(){
+            setTimeout(()=>{
+               console.log("out put second")
+            },2000)
+        }
+   fun1(fun2)
+     
+    </script>
+
+</body>
+</html>

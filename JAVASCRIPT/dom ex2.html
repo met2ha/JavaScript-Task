@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #a387bc;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #87639a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(44, 24, 24, 0.1);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input#a{
+  flex: 1;
+  padding: 14px;
+  border: 3px solid #6c4c7b;
+  border-radius: 5px;
+  
+  margin-top: 15px;
+}
+
+button#addBtn {
+  background-color: #5f1e71;
+  color: #9684ad;
+  
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+
+
+ul#b li {
+  margin-bottom: 10px;
+  background-color: hsl(288, 28%, 35%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+    </style>
+ </head>
+ <body>
+  <div class="container">
+    <div class="row">
+      <input type="text" id="a" placeholder="Enter your favorite item...">
+      <button id="addBtn">Add to Cart</button>
+    </div>
+    <ul id="b">
+      
+    </ul>
+  </div>
+
+  <script>
+    document.getElementById('addBtn').addEventListener('click', function() 
+    
+    {
+  let a = document.getElementById('a');
+  let b = document.getElementById('b');
+
+  if (a.value.trim() !== '')
+  
+  {
+    let c = document.createElement('li');
+    c.textContent = a.value;
+    b.appendChild(c);
+    a.value = ''; 
+  }
+
+});
+
+  </script>
+  
+</body>
+</html>
+
+    
+ 

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+ <!-- EVENTS TYPE 
+
+
+    1. Keyboard Events (KeyPress,KeyUp,KeyDown)
+    2. Windows Events ( onload,unload,resize)
+    3. Form Events (onfocus,onblur,onreset,onsubmit,onchange)
+    4. Mouse Events(Mouseenter,Mouseleave,Mousemove,Mouseout,Mouseup,Mousedown,Click,dbclick)
+
+     -->
+
+<!-- <body> -->
+
+    <!-- <input type="text"  onkeydown="func()" onkeyup="func123()"/>
+
+     
+    <script>
+    
+    function func(){
+        console.log("key down")
+
+    }
+
+    function func123(){
+
+        console.log("key up")
+    }
+
+    </script>
+     -->
+
+
+
+      <!-- <input type="text" id="fun123"/>
+
+     <script>
+        let a=document.getElementById("fun123")
+        a.addEventListener("keydown",()=>{
+
+            console.log("keeleapo")
+
+        })
+
+     
+          a.addEventListener("keypress",()=>{
+
+             console.log("apdiyenil")})
+
+
+    
+           a.addEventListener("keypress",()=>{
+
+             console.log("meleaava")})
+        
+     </script> 
+
+
+
+</script> -->
+
+
+<!-- 
+<input type="text" id="fun123"/>
+
+<script>
+    
+    let a=document.getElementById("fun123")
+        a.addEventListener("mouseenter",()=>{
+
+            console.log("ENTER")
+
+        })
+
+    
+          a.addEventListener("mouseleave",()=>{
+
+            console.log("LEAVE")})
+
+
+    
+            a.addEventListener("mousemove",()=>{
+
+             console.log("MOVE")
+            })
+
+
+        
+          a.addEventListener("mouseout",()=>{
+
+             console.log("out")})
+
+
+    
+          a.addEventListener("mouseup",()=>{
+
+           console.log("up")})
+
+
+          
+         a.addEventListener("mousedown",()=>{
+
+            console.log("down")
+
+        })
+</script> -->
+
+
+<!-- 
+<form>
+<input type="text" id="fun123" onfocus="fun()"/>
+<input type="button" value="CheckIn"/>
+</form>
+
+<script>
+
+ function fun(){
+ document.getElementById("fun123").style.backgroundColor="purple"
+ }
+
+</script> -->
+
+<!-- 
+<form>
+    <input type="text" id="123" onblur="fun()"/>
+    <input type="button" value="CheckIn"/>
+    </form>
+    
+    <script>
+    
+     function fun(){
+     document.getElementById("123").style.backgroundColor="plum"
+     }
+    
+    </script> -->
+
+
+<!-- <form>
+    <input type="text" id="123"  onfocus="fun()" onblur="func()"/>
+    <input type="button" value="CheckIn"/>
+    </form>
+    
+    <script>
+    
+     function fun(){
+     document.getElementById("123").style.backgroundColor="plum"
+     }
+
+     function func(){
+     document.getElementById("123").style.backgroundColor="skyblue"
+     }
+    
+    </script> -->
+
+
+    <!-- <form  onreset="return false">
+
+
+        <input  type="text">
+        <input type="submit" value="click"/> 
+        </form>
+        
+     <script>
+        
+       </script> 
+      -->
+
+    <!-- <form method="post" action="123.php" onsubmit="return true"  onreset="return false">
+
+
+        <input  type="text">
+        <input type="submit" value="click"/> 
+        </form>
+        
+     <script>
+        
+       </script>  -->
+
+
+       <!-- <select onchange="func(this.value)" >
+
+        <option value="purple">Purple</option>
+        <option value="skyblue">Skyblue</option>
+        <option value="red">Red</option>
+
+       </select>
+       <script>
+
+        function func(val){
+            document.bgColor=val
+        }
+        
+       </script> -->
+
+<!-- 
+<body onload="window.alert(`page loaded successfully`)">
+    <form onreset="validate()">
+        <input type="text">
+        <input type="reset" value="click">
+
+    </form>
+     -->
+
+
+     <!-- <body>
+         
+        <p id="result"> </p>
+
+        <script>
+             function displaywindowSize(){
+
+                 var a=window.outerWidth;
+
+                 var b=window.outerHeight;
+
+                 var txt="Window size:width=" + a +"height="+ b;
+
+                 document.getElementById("result").innerHTML = txt;
+             }
+
+             window.onresize=displaywindowSize;
+        </script> -->
+        
+ 
+      
+    
+
+
+   
+
+
+
+</body>
+</html>

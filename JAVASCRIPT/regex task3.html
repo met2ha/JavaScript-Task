@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function met(mobileNumber) {
+    
+    let pattern = /^[0-9]{10}$/;
+  return pattern.test(mobileNumber);
+}
+
+
+console.log(met("1234567890"));  
+console.log(met("1234"));        
+console.log(met("9876543210"));  
+console.log(met("abc1234567"));  
+
+    </script>
+</body>
+</html>

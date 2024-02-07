@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function met(number, decinum) {
+        
+        if (typeof number !== 'number' || isNaN(number)) {
+            return 'Invalid input';
+        }
+    
+        
+        let num1= number.toFixed(decinum);
+    
+        return num1;
+    }
+    
+    
+    console.log(met(2.100212, 2)); 
+    console.log(met(2.100212, 3)); 
+    console.log(met(2100, 2));      
+
+    </script>
+    
+</body>
+</html>

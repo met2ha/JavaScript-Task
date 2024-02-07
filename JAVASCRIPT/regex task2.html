@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="met">
+
+    <button onclick="fi()">CheckIn</button>
+ 
+    
+    <script>
+let abc=document.getElementById("met").value
+    let xyz=/^[a-z]+[\.]+[\d]+[\16]+[\.]+[\@][a-z]+[\.]+[a-z]+$/g;
+    function fi(){
+        if(xyz.test(abc)){
+        alert("wrong password")
+    }else{
+        alert("correct password")
+    }
+}
+
+    </script>
+</body>
+</html>

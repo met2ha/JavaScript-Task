@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="purple">
+    <input type="text" id="tic"/>
+    <button onclick="fun()">Click to add</button>
+    <ul id="sak"></ul>
+    <script>
+         
+         function fun(){
+            let met=document.getElementById("tic").value;
+            let mri=document.getElementById("sak");
+            
+            mri.innerHTML+="<li>" +met+"</li>";
+         };
+    </script>
+    
+</body>
+</html>

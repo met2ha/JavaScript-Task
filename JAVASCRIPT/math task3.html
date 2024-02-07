@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function met(arr) {
+    if (arr.length === 0) {
+        return undefined; 
+    }
+
+    let Value = arr[0]; 
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > Value) {
+            Value = arr[i]; 
+        }
+    }
+
+    return Value;
+}
+console.log(met([12, 34, 56, 1])); 
+console.log(met([-12, -34, 0, -56, -1])); 
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+  async function func()  {
+
+let a= await fetch('https://fakestoreapi.com/products/')
+let res=await a.json()
+
+  
+res.map(sak=>{
+
+        let a=document.createElement("div")
+
+        document.body.appendChild(a)
+        
+        a.setAttribute("class","bg-info")
+        let im=document.createElement("img")
+        im.setAttribute("src",sak.image) 
+        a.appendChild(im)
+    })
+}
+
+
+</script>
+
+</body>
+</html>

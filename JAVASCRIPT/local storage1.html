@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Username</label>
+        <input type="text" id="met"/>
+        <label>Password</label>
+        <input type="text" id="mri"/>
+
+    </form><br/><br/>
+    <button onclick="fun()">ENTER</button><br/><br/>
+    <table border="2px">
+        <thead>
+            <th>Name</th>
+            <th>Password</th>
+        </thead>
+
+        <tbody id="sak"></tbody>
+
+    </table>
+    <script>
+   
+   function fun(){
+    let a=document.getElementById("met").value
+    let b=document.getElementById("mri").value
+
+    let c=document.getElementById("mri").value=""
+    let d=document.getElementById("met").value=""
+    
+document.getElementById("sak").innerHTML+=`<tr>
+                                                <td> ${a} </td>
+                                                <td> ${b}</td>
+                                              </tr>`
+
+                          localStorage.setItem("username",a)
+                         localStorage.setItem("password",b)
+
+
+   }
+     
+    </script>
+
+
+</body>
+</html>

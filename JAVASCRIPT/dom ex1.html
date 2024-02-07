@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function DOM() {
+  let divElement = document.createElement('div');
+  let textNode = document.createTextNode('Login');
+  let inputElement = document.createElement('input');
+  let buttonElement = document.createElement('button');
+  let buttonText = document.createTextNode('Click');
+
+      buttonElement.appendChild(buttonText);
+  divElement.appendChild(textNode);
+  divElement.appendChild(inputElement);
+  divElement.appendChild(buttonElement);
+
+  document.body.appendChild(divElement);
+}
+
+DOM();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>NO</th>
+        </thead>
+
+        <tbody id="met"> </tbody>
+    </table>
+
+    <script>
+        fetch("json.json")
+        .then((res)=>{
+        return res.json();})
+
+        .then((members)=>{
+            let disply=document.getElementById("met");6
+            let out="";
+
+            members.map(e=>{
+                out+=`
+                <tr>
+                    <td> ${e.id}</td>
+                    <td> ${e.name}</td>
+                    <td> ${e.no}</td>
+                 </tr>`   
+                
+        })
+                disply.innerHTML = out
+            });
+
+
+        
+    </script>
+</body>
+</html>
